@@ -1,6 +1,13 @@
-﻿namespace TesteAPI.Controllers
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+
+namespace TesteAPI.Controllers
 {
-    public class ProdutosController
+    [Route("api/[controller]")]
+    [ApiController]
+    public class ProdutosController : ControllerBase
     {
+        private readonly AppDbContext _context;
+
     }
 }
